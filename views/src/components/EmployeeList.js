@@ -6,7 +6,7 @@ import Pagination from './Pagination';
 import Movie from './Movie.js';
 
 
-const MovieList = () => {
+const EmployeeList = () => {
 
     const {sortedMovies} = useContext(MovieContext);
 
@@ -45,7 +45,11 @@ const MovieList = () => {
     <div className="table-title">
         <div className="row">
             <div className="col-sm-6">
+<<<<<<< HEAD:views/src/components/MovieList.js
                 <h2><b> Movies List </b></h2>
+=======
+                <h2>Manage <b>Employees</b></h2>
+>>>>>>> parent of f8e006d0 (Merge branch 'main' of https://github.com/leigharriane/MCO2-Sql):views/src/components/EmployeeList.js
             </div>
             <div className="col-sm-6">
                 <Button onClick={handleShow} className="btn btn-success" data-toggle="modal"><i className="material-icons">&#xE147;</i> <span>Add New Movie</span></Button>					
@@ -54,7 +58,7 @@ const MovieList = () => {
     </div>
 
     <Alert show={showAlert} variant="success">
-        Movie List Updated Succefully!
+        Emlployee List Updated Succefully!
     </Alert>
 
     <table className="table table-striped table-hover">
@@ -89,7 +93,7 @@ const MovieList = () => {
     <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
             <Modal.Title>
-                Add Movie
+                Add Employee
             </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -105,4 +109,4 @@ const MovieList = () => {
     )
 }
 
-export default MovieList;
+export default EmployeeList;
